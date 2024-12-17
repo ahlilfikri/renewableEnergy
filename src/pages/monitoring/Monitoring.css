@@ -1,0 +1,114 @@
+/* src/App.css */
+.monitoring-container {
+    padding: 100px 0 0 0;
+    min-height: 100vh ;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgb(51,244,76);
+    background: -moz-linear-gradient(195deg, rgba(51,244,76,0.6784838935574229) 0%, rgba(0,7,9,1) 9%);
+    background: -webkit-linear-gradient(195deg, rgba(51,244,76,0.6784838935574229) 0%, rgba(0,7,9,1) 9%);
+    background: linear-gradient(195deg, rgba(2, 255, 36, 0.678) -40%, rgba(0,7,9,1) 20%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33f44c",endColorstr="#000709",GradientType=1);
+    color: #ffff;
+
+}
+.monitoring-container h1 {
+    padding: 0 30px;
+}
+
+.monitoring-container .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.monitoring-container .card {
+    width: 100%;
+    height: min-content;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #202020;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    color: #ffff;
+}
+
+.monitoring-container .card-content {
+    display: flex;
+}
+
+.monitoring-container .card-header h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.monitoring-container .card-body p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.monitoring-container .card-body h2 {
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Efek hover untuk card */
+.monitoring-container .card:hover {
+    transform: translateY(-5px);
+    /* Memberikan efek saat card dihover */
+}
+.monitoring-container .status1, .monitoring-container .status2 {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Media Queries untuk Responsivitas */
+
+/* Tablet atau layar kecil (maksimal 1024px) */
+@media (max-width: 1024px) {
+    .monitoring-container .card-container {
+        justify-content: center;
+        /* Menyusun card di tengah */
+    }
+
+    .monitoring-container .card {
+        max-width: 300px;
+        /* Lebar card sedikit lebih besar di tablet */
+    }
+}
+
+/* Ponsel atau layar sangat kecil (maksimal 768px) */
+@media (max-width: 768px) {
+    .monitoring-container .card-container {
+        justify-content: center;
+        /* Menyusun card di tengah */
+        gap: 15px;
+        /* Mengurangi jarak antar card */
+    }
+
+    .monitoring-container .card {
+        max-width: 100%;
+        /* Card akan memenuhi lebar layar */
+        padding: 15px;
+        /* Mengurangi padding untuk ukuran lebih kecil */
+    }
+}
+
+/* Ponsel yang sangat kecil (maksimal 480px) */
+@media (max-width: 480px) {
+    .monitoring-container .card {
+        max-width: 100%;
+        /* Card tetap full width */
+        padding: 10px;
+        /* Mengurangi padding lebih banyak */
+    }
+}

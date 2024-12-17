@@ -6,6 +6,8 @@ import "./index.css";
 import Home from './pages/home/index';
 import SignIn from './auth/signin/Signin';
 import Register from './auth/register/Register';
+import Monitoring from './pages/monitoring/Monitoring';
+import Count from './pages/count/Count';
 
 const router = createBrowserRouter([
   // {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/monitoring",
+    element: <Monitoring />,
+  },
+  {
+    path: "/count",
+    element: <Count />,
   }
 ]);
 

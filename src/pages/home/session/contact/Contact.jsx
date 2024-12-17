@@ -65,13 +65,13 @@ const Contact = () => {
                             <p>+62 882-3012-7462</p>
                         </div>
                         <div className="social-media">
-                            <a href="https://www.instagram.com/ahlilfikri94" target="_blank" rel="noopener noreferrer">
+                            <a  target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="instagram" icon={faInstagram} size="xl" color="grey" />
                             </a>
-                            <a href="https://www.linkedin.com/in/muhamad-ahlil-fikri-ba7a51282" target="_blank" rel="noopener noreferrer">
+                            <a  target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="linkedin" icon={faLinkedin} size="xl" color="grey" />
                             </a>
-                            <a href="https://github.com/ahlilfikri" target="_blank" rel="noopener noreferrer">
+                            <a  target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="github" icon={faGithub} size="xl" color="grey" />
                             </a>
                         </div>

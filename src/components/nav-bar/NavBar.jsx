@@ -47,8 +47,8 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/check">
-                  Cek Energi
+                <Link className="nav-link" to="/monitoring">
+                  Monitoring
                 </Link>
               </li>
               <li>
