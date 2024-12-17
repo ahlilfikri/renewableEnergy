@@ -14,9 +14,10 @@
 /* Style untuk modal notifikasi */
 .notification-modal {
     position: fixed;
-    top: 90px;
+    top: ;
     left: 0;
     width: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); /* Background semi transparan */
     display: flex;
     justify-content: center;
