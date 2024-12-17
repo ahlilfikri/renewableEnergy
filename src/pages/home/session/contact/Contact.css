@@ -49,7 +49,7 @@
 
 .contact-container .content-left{
     width : 50vw;
-    background-color:#adb4bf;
+    background-color:#000;
 }
 
 .contact-container .wrapper {
@@ -67,7 +67,7 @@
     width: 80%;
     height: fit-content;
     padding: 10px;
-    background-color: #adb4bf;
+    background-color: #000;
     pointer-events: none;
     top: 550px;
     left: 50%;
@@ -79,15 +79,17 @@
 .contact-container .address-box h5{
     font-size: 16px;
     font-weight: 400;
+    color: #ffffff;
 }
 .contact-container .address-box p{
     font-size: 24px;
     font-weight: bold;
     text-align: justify;
+    color: #ffffff;
 }
 .contact-container .btn-send-massage-contact-us{
     border-radius: 8px;
-    background: #FFF;
+    background: #000;
     color: #0F5998;
 }
 
@@ -152,14 +154,14 @@
     }
     .contact-container .content-right{
         margin-top: 10vh !important;
-        background-color: #F5F5F5 !important;
+        background-color: #000 !important;
     }
 }
 
 @media (max-width: 960px) {
     .contact-container {
         height: 1550px ;
-        background-color: #F5F5F5;
+        background-color: #000;
     }
     .contact-container .content-left{
         width : 50vw;
@@ -189,7 +191,6 @@
         width: 100vw;
         height: 50vh;
         padding-top: 10vh;
-        background-color: #F5F5F5;
     }
     .contact-container .content-left .wrapper{
         position : relative;
@@ -244,9 +245,11 @@
     .contact-container .address-box p{
         font-size: 16px;
         font-weight: bold;
+        color: #ffffff !important;
     }   
     .contact-container .address-box {
         padding: 2vh !important;
+        color: #ffffff !important;
     }
     .contact-container {
         padding : 0 0 0 0;

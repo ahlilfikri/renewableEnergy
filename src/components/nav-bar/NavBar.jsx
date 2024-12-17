@@ -14,22 +14,18 @@ const NavBar = () => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
-
     window.addEventListener('resize', handleResize);
-
-    // Clean up listener on unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // Dependency array kosong, hanya dijalankan sekali saat mount
-
+  }, []); 
   useEffect(() => {
     if (screenWidth > 600) {
-      setIsOpen(true); // Navbar selalu terbuka di layar besar
+      setIsOpen(true); 
     } else {
-      setIsOpen(false); // Navbar tersembunyi di layar kecil
+      setIsOpen(false); 
     }
-  }, [screenWidth]); // Update ketika ukuran layar berubah
+  }, [screenWidth]); 
 
   return (
     <nav className="navbar">
