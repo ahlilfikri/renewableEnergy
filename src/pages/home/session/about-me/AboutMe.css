@@ -1,20 +1,20 @@
 .about-me-container {
     display: block;
-    background-color: #ADB4BF;
     padding: 5% 0;
     width: 100%;
-    opacity: 0; /* Start with opacity set to 0 */
-    transition: opacity 1s ease-in-out; /* Added transition property */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .about-me-container h1 {
     margin: auto;
     max-width: max-content;
-    color: #454A52;
+    color: #ffffff;
     font-size: 60px;
 }
 
 .about-me-container p {
+    color: #ffffff;
     font-size: 25px;
     text-align: justify;
     width: 70%;
@@ -38,7 +38,7 @@
 }
 
 .about-me-container button a {
-    color: #454A52;
+    color: #ffffff;
     text-decoration: none;
 }
 

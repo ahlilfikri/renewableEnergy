@@ -2,4 +2,9 @@
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    background: rgb(51,244,76);
+    background: -moz-linear-gradient(195deg, rgba(51,244,76,0.6784838935574229) 0%, rgba(0,7,9,1) 9%);
+    background: -webkit-linear-gradient(195deg, rgba(51,244,76,0.6784838935574229) 0%, rgba(0,7,9,1) 9%);
+    background: linear-gradient(195deg, rgba(2, 255, 36, 0.678) -40%, rgba(0,7,9,1) 20%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33f44c",endColorstr="#000709",GradientType=1);
 }

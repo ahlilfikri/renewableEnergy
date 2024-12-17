@@ -33,9 +33,9 @@ const AboutMe = () => {
     return (
         <Fragment>
             <div className="about-me-container" ref={contentRef}>
-                <h1>About Me</h1>
-                <p>Hello, my name is Muhamad Ahlil Fikri. I am a 6th-semester student majoring in Information Technology at Telkom University, and I am currently an active student. I have a strong interest in developing and building dynamic, responsive, and user-friendly websites. Additionally, I have one year of experience working as a full-stack web developer. Currently, I am also participating in the Bangkit Academy 2024 program with a focus on the Android Learning Path to further enhance my skills and knowledge in mobile application development.</p>
-                <button className="btn btn-secondary" onClick={modal}>View My Resume</button>
+                <h1>Tentang Kami</h1>
+                <p>Dalam era modern ini, penggunaan energi terbarukan semakin penting untuk mengurangi dampak negatif terhadap lingkungan dan memastikan keberlanjutan sumber daya alam. Namun, meskipun kesadaran akan pentingnya energi terbarukan terus berkembang, masih banyak individu yang kesulitan untuk memantau dan mengelola konsumsi energi mereka, khususnya di lingkungan kampus atau komunitas.
+                    Aplikasi [Nama Aplikasi] hadir untuk menjawab tantangan tersebut dengan menyediakan solusi digital yang sederhana namun efektif dalam memantau konsumsi energi terbarukan secara real-time. Selain itu, aplikasi ini juga dilengkapi dengan fitur yang memungkinkan pengguna untuk mengatur batasan konsumsi energi tidak terbarukan dan menerima notifikasi otomatis jika batas tersebut terlampaui. Tujuan utama dari aplikasi ini adalah untuk meningkatkan kesadaran pengguna, terutama mahasiswa, mengenai pentingnya mengelola energi secara bertanggung jawab dan berkelanjutan.</p>
             </div>
             <Modal
                 isOpen={resumeOpen}

@@ -1,27 +1,29 @@
-
 .navbar {
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    width: 50%;
-    background-color: #f5f5f5;
+    position: fixed;  /* Tetap berada di atas */
+    top: 0; /* Menjaga navbar berada di atas */
+    left: 0; /* Agar navbar menempel ke kiri */
+    right: 0; /* Agar navbar menempel ke kanan */
+    width: 100%; /* Menggunakan lebar penuh */
+    background-color: #000 !important;
     color: #ADB4BF;
+    z-index: 1000; /* Mengatur z-index agar navbar berada di atas elemen lainnya */
 }
 
 .navbar .menu-drop-down {
-    position : absolute;
-    right : 5%;
-    top : 40%;
-    font-size : 20px;
-    padding : 0 5px ;
-    border : 2px solid #adb4bf;
-    color : #adb4bf;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    font-size: 20px;
+    padding: 0 5px;
+    border: 2px solid #adb4bf;
+    color: #adb4bf;
 }
 
-
-.navbar h2{
+.navbar h2 {
     padding: 0 0 0 10px;
     font-size: 28px;
 }
@@ -39,8 +41,7 @@
     font-weight: 500;
 }
 
-.nav-links Link {
-    color: #454A52;
+.nav-links a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -52,36 +53,41 @@
 }
 
 @media (max-width: 360px) {
-    .navbar h2{
+    .navbar h2 {
         font-size: 100%;
     }
 }
+
 @media (max-width: 600px) {
     .navbar {
-        position:absolute;
-        width: 100vw;
+        position: fixed; /* Agar tetap di atas */
+        top: 0;
+        width: 100%; /* Lebar penuh */
+        background-color: #0000; /* Bisa menyesuaikan dengan warna latar belakang yang diinginkan */
     }
+
     .nav-links {
-        /* display: none ; */
         flex-direction: column;
         background-color: #adb4bf;
         position: absolute;
-        top: 50px;
+        top: 50px; /* Menyesuaikan dengan tinggi navbar */
         left: 0;
         right: 0;
         text-align: center;
         margin-bottom: 100px;
         z-index: 1000;
+        display: none; /* Menyembunyikan menu di awal */
     }
-    
+
     .nav-links.active {
-        display: block;
+        display: block; /* Menampilkan menu ketika active */
     }
-    
+
     .nav-links li {
         margin: 10px 0;
     }
-    .nav-links li a{
-        color : #f5f5f5;
+
+    .nav-links li a {
+        color: #f5f5f5;
     }
 }

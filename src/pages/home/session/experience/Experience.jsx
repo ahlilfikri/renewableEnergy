@@ -9,42 +9,32 @@ import './Experience.css'
 const Experience = () =>{
     const data = [
         {
-            title : "PDAM Tirta Kerta Raharja administration",
-            description : "Administration website for internal PDAM Tirta Kerta Raharja",
-            image : "/portofolio/PDAMTKR.png"
+            title : "Energi Terbarukan, Mampu Mengurangi Dampak Kerusakan di Bumi",
+            description : "https://www.rri.co.id/iptek/676935/energi-terbarukan-mampu-mengurangi-dampak-kerusakan-di-bumi",
+            image : "https://cdn.rri.co.id/berita/Palu/o/1715074135939-Untitled-1/xzzph656glvyw4g.jpeg"
         },
         {
-            title : "PDAM Tirta Kerta Raharja Training center",
-            description : "Training Website For External or PDAM Tirta Kerta Raharja Employee ",
-            image : "/portofolio/PDAMTKR.png"
+            title : "Energi Terbarukan, Mampu Mengurangi Dampak Kerusakan di Bumi",
+            description : "https://www.rri.co.id/iptek/676935/energi-terbarukan-mampu-mengurangi-dampak-kerusakan-di-bumi",
+            image : "https://cdn.rri.co.id/berita/Palu/o/1715074135939-Untitled-1/xzzph656glvyw4g.jpeg"
         },
         {
-            title : "PT Rahayu Antara Nusindo",
-            description : "Company Profile Website For PT Rahayu Antara Nusindo",
-            image : "/portofolio/RAN.png"
+            title : "Energi Terbarukan, Mampu Mengurangi Dampak Kerusakan di Bumi",
+            description : "https://www.rri.co.id/iptek/676935/energi-terbarukan-mampu-mengurangi-dampak-kerusakan-di-bumi",
+            image : "https://cdn.rri.co.id/berita/Palu/o/1715074135939-Untitled-1/xzzph656glvyw4g.jpeg"
         },
         {
-            title : "Layanan Sistem Informasi Desa (SID) Wareng",
-            description : "Digital Admnistration For Wareng Village",
-            image : "/portofolio/LogoWareng.svg"
+            title : "Energi Terbarukan, Mampu Mengurangi Dampak Kerusakan di Bumi",
+            description : "https://www.rri.co.id/iptek/676935/energi-terbarukan-mampu-mengurangi-dampak-kerusakan-di-bumi",
+            image : "https://cdn.rri.co.id/berita/Palu/o/1715074135939-Untitled-1/xzzph656glvyw4g.jpeg"
         },
-        {
-            title : "Herbal Yuniari",
-            description : "Company Profile Website For UMKM Herbal Yuniari",
-            image : "/portofolio/HerbalYuniari.png"
-        },
-        {
-            title : "SISTEM PELAPORAN KEJADIAN GANGGUAN, KEAMANAN DAN KETERTIBAN MASYARAKAT (SIJAGAMAS)",
-            description : "SIJAGAMAS enables quick reporting of public disturbances and security issues. It features a user-friendly interface and real-time notifications to help authorities promptly address incidents, enhancing community safety.",
-            image : "/portofolio/SIJAGAMAS.png"
-        }
     ]
 
     return (
         <Fragment>
             <div className="experience-container">
-                <h1>Experience</h1>
-                <p>here is few my past project or under constructing project</p>
+                <h1>Informasi</h1>
+                <p>Berikut adalah beberapa artikel mengenai energi terbarukan</p>
                 <div className="card-experience">
                     <Slider {...settings}>
                         {data.map((dataItem,idx) => (
@@ -53,6 +43,7 @@ const Experience = () =>{
                                 title = {dataItem.title}
                                 description = {dataItem.description}
                                 image = {dataItem.image}
+                                index = {idx % 2 == 0 }
                             />
                         ))}
                     </Slider>

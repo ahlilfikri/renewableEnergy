@@ -7,13 +7,13 @@
     color: #adb4bf;
 }
 .footer-container {
-    background-color: #454a52;
+    background-color: #000;
 }
 
 @media (max-width: 960px) {
     .footer-container h1 {
         position: absolute;
-        background-color: #454a52;
+        background-color: #000;
         width: 100vw;
         text-align: center;
     }

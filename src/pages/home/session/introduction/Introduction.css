@@ -1,8 +1,9 @@
 .introduction-container {
     display: flex;
-    background-color: #f5f5f5;
-    color: #454A52;
+    /* background-color: #f5f5f5; */
+    color: #ffffff;
     padding-bottom: 1px;
+    padding-top: 100px;
 }
 
 .introduction-container .content-left{
@@ -12,6 +13,7 @@
 
 .introduction-container .content-left p {
     font-size: 30px;
+    text-align: justify;
 }
 
 .introduction-container .content-left .first-h1{
@@ -54,6 +56,9 @@
 }
 
 @media (max-width: 1024px) {
+    .introduction-container {
+        padding-top: 0;
+    }
     .introduction-container .content-left .first-h1{
         color: #ADB4BF;
         font-size: 30px;

@@ -51,18 +51,18 @@ const Contact = () => {
                 </div>
                 <div className="content-right">
                     <div className="text-content">
-                        <h1>Contact</h1>
+                        <h1>Kontak</h1>
                         <div className="address">
-                            <h3>Address</h3>
+                            <h3>Alamat</h3>
                             <p>Sahabat Laundry Gg.Haji Atmawigena No.88, Desa Citereup, Kecamatan Dayeuhkolot, Kabupaten Bandung, 40257</p>
                         </div>
                         <div className="email">
                             <h3>Email</h3>
-                            <p>ahlilfikri49@gmail.com</p>
+                            <p>eduEnergy@gmail.com</p>
                         </div>
                         <div className="telephone">
-                            <h3>Telephone</h3>
-                            <p>+62 882-1033-5073</p>
+                            <h3>Telepon</h3>
+                            <p>+62 882-3012-7462</p>
                         </div>
                         <div className="social-media">
                             <a href="https://www.instagram.com/ahlilfikri94" target="_blank" rel="noopener noreferrer">

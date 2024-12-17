@@ -1,6 +1,5 @@
 .experience-container {
     width: 100%;
-    background-color: #F5F5F5;
     padding : 0 0 10% 0;
 }
 
@@ -9,7 +8,7 @@
     margin: auto;
     padding: 5% 0 1% 0;;
     font-size: 60px;
-    color: #454a52;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -18,12 +17,11 @@
     margin: auto;
     padding: 0 0 5% 0;
     font-size: 30px;
-    color: #454a52;
+    color: #ffffff;
 }
 
 .experience-container .card-experience {
     width : 100%;
-    /* background-color:red */
 }
 .experience-container .card-experience .slick-arrow{
     display : none !important;
@@ -42,7 +40,7 @@
     margin: 0 10px;
     padding: 0; 
     cursor: pointer;
-    background-color: #D9D9D9;
+    background-color: #B3F0AA;
     border-radius: 50%;
     font-size: 20px;
 }
@@ -50,7 +48,7 @@
     opacity: 0;
 }
 .experience-container .slick-dots li.slick-active  {
-    background-color: #454a52;
+    background-color: #ffffff;
 }
 @media (max-width: 720px) {
     .experience-container {

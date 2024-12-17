@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <Fragment>
             <div className="footer-container">
-                <h1>© 2023 by Muhamad Ahlil Fikri.</h1>
+                <h1>© 2024 By TAKBIR Team</h1>
             </div>
         </Fragment>
     )

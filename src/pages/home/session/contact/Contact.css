@@ -11,17 +11,17 @@
 
 .contact-container .content-right {
     width : 50vw;
-    color : #454a52;
+    color : #ffffff;
 }
 
 .contact-container .content-right .text-content {
     padding : 0 0 0 4em ;
 }
 .contact-container .content-right .text-content h3{
-    color : #454a52;
+    color : #ffffff;
 }
 .contact-container .content-right .text-content p{
-    color : #36383d;
+    color : #ffffff;
 }
 
 .contact-container .content-right .text-content .address,.contact-container .content-right .text-content .email,.contact-container .content-right .text-content .telephone{
