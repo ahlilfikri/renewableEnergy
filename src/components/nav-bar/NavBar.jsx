@@ -28,6 +28,8 @@ const NavBar = () => {
       setIsOpen(false);
     }
   }, [screenWidth]);
+  console.log(isOpen);
+  
 
   return (
     <nav className="navbar">

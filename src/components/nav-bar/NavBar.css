@@ -24,7 +24,9 @@
     font-size: 20px;
     padding: 0 5px;
     border: 2px solid #adb4bf;
-    color: #ffff;
+    border-radius: 1vw;
+    color : #ffff;
+    background-color: #0000;
 }
 
 .navbar h2 {
@@ -36,6 +38,7 @@
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links {
@@ -79,16 +82,22 @@
 }
 
 @media (max-width: 600px) {
+    .nav-wrapper {
+        display: block;
+    }
+    
     .navbar {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #0000;
+        display: block;
     }
-
+    
     .nav-links {
+        display: block;
         flex-direction: column;
-        background-color: #adb4bf;
+        background-color: #000;
         position: absolute;
         top: 50px;
         left: 0;
@@ -96,9 +105,17 @@
         text-align: center;
         margin-bottom: 100px;
         z-index: 1000;
-        display: none;
     }
-
+    .nav-wrapper .account{
+        background-color: #000;
+        top: 190px;
+        position: absolute;
+        border: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 10px 10px 45vw;
+    }
+    
     .nav-links.active {
         display: block;
     }
