@@ -108,7 +108,7 @@
     }
     .nav-wrapper .account{
         background-color: #000;
-        top: 190px;
+        top: 170px;
         position: absolute;
         border: none;
         width: 100%;
@@ -126,5 +126,8 @@
 
     .nav-links li a {
         color: #ffff;
+    }
+    .navbar .container{
+        padding: 10px 0;
     }
 }
