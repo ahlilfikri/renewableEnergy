@@ -45,7 +45,7 @@ const Contact = () => {
                         </div>
                         <div className='address-box'>
                             <h5>Map Street</h5>
-                            <p>Sahabat Laundry Gg.H Atmawigena No.88 Citereup, KAB. Bandung, Dayeuhkolot, Jawa Barat, ID 40257</p>
+                            <p> Kabupaten Bandung Jawa Barat</p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                         <h1>Kontak</h1>
                         <div className="address">
                             <h3>Alamat</h3>
-                            <p>Sahabat Laundry Gg.Haji Atmawigena No.88, Desa Citereup, Kecamatan Dayeuhkolot, Kabupaten Bandung, 40257</p>
+                            <p>Kabupaten Bandung Jawa Barat</p>
                         </div>
                         <div className="email">
                             <h3>Email</h3>

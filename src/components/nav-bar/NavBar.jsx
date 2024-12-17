@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { FaRegUser } from "react-icons/fa";
 import './NavBar.css';
 
 const NavBar = () => {
@@ -18,14 +19,15 @@ const NavBar = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); 
+  }, []);
+
   useEffect(() => {
     if (screenWidth > 600) {
-      setIsOpen(true); 
+      setIsOpen(true);
     } else {
-      setIsOpen(false); 
+      setIsOpen(false);
     }
-  }, [screenWidth]); 
+  }, [screenWidth]);
 
   return (
     <nav className="navbar">
@@ -37,28 +39,38 @@ const NavBar = () => {
           </button>
         )}
         {isOpen && (
-          <ul className="nav-links">
-            <li>
-              <Link className="nav-link" to="aboutMe" smooth={true} duration={500}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="video" smooth={true} duration={500}>
-                Video
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="experience" smooth={true} duration={500}>
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="contact" smooth={true} duration={500}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <div className="nav-wrapper">
+            <ul className="nav-links">
+              <li>
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-link" to="/check">
+                  Cek Energi
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-link" to="/count">
+                  Hitung Energi
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-link" to="/#contact">
+                  Kontak
+                </Link>
+              </li>
+            </ul>
+            <Link className="nav-link" to="/signin">
+              <div className="account">
+              <FaRegUser />
+              <p className="">
+                  User
+                </p>
+              </div>
+            </Link>
+          </div>
         )}
       </div>
     </nav>

@@ -17,7 +17,7 @@
 }
 
 .introduction-container .content-left .first-h1{
-    color: #ADB4BF;
+    color: #ffff;
     font-size: 50px;
 }
 
@@ -60,7 +60,7 @@
         padding-top: 0;
     }
     .introduction-container .content-left .first-h1{
-        color: #ADB4BF;
+        color: #ffff;
         font-size: 30px;
     }
     .introduction-container .content-left .second-h1{

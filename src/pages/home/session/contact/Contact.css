@@ -113,7 +113,7 @@
 }
 
 .contact-container .content-right .text-content .social-media .linkedin:hover, .contact-container .content-right .text-content .social-media .instagram:hover, .contact-container .content-right .text-content .social-media .github:hover{
-    color: red;
+    color: #33f44c;
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }

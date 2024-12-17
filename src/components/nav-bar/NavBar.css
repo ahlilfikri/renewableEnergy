@@ -3,14 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;  /* Tetap berada di atas */
-    top: 0; /* Menjaga navbar berada di atas */
-    left: 0; /* Agar navbar menempel ke kiri */
-    right: 0; /* Agar navbar menempel ke kanan */
-    width: 100%; /* Menggunakan lebar penuh */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     background-color: #000 !important;
     color: #ADB4BF;
-    z-index: 1000; /* Mengatur z-index agar navbar berada di atas elemen lainnya */
+    z-index: 1000;
+}
+
+.navbar .container {
+    width: 100%;
 }
 
 .navbar .menu-drop-down {
@@ -20,12 +24,18 @@
     font-size: 20px;
     padding: 0 5px;
     border: 2px solid #adb4bf;
-    color: #adb4bf;
+    color: #ffff;
 }
 
 .navbar h2 {
     padding: 0 0 0 10px;
     font-size: 28px;
+    color: #ffff ;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-links {
@@ -45,11 +55,21 @@
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    color: #ffff;
 }
 
-.nav-links li:hover {
+.nav-links a:hover {
     cursor: pointer;
     color: #444444;
+}
+.nav-link .account {
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border: #ffff 1px solid;
+    border-radius: 1vw;
 }
 
 @media (max-width: 360px) {
@@ -60,27 +80,27 @@
 
 @media (max-width: 600px) {
     .navbar {
-        position: fixed; /* Agar tetap di atas */
+        position: fixed;
         top: 0;
-        width: 100%; /* Lebar penuh */
-        background-color: #0000; /* Bisa menyesuaikan dengan warna latar belakang yang diinginkan */
+        width: 100%;
+        background-color: #0000;
     }
 
     .nav-links {
         flex-direction: column;
         background-color: #adb4bf;
         position: absolute;
-        top: 50px; /* Menyesuaikan dengan tinggi navbar */
+        top: 50px;
         left: 0;
         right: 0;
         text-align: center;
         margin-bottom: 100px;
         z-index: 1000;
-        display: none; /* Menyembunyikan menu di awal */
+        display: none;
     }
 
     .nav-links.active {
-        display: block; /* Menampilkan menu ketika active */
+        display: block;
     }
 
     .nav-links li {
@@ -88,6 +108,6 @@
     }
 
     .nav-links li a {
-        color: #f5f5f5;
+        color: #ffff;
     }
 }
