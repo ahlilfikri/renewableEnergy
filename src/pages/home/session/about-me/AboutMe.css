@@ -1,0 +1,57 @@
+.about-me-container {
+    display: block;
+    background-color: #ADB4BF;
+    padding: 5% 0;
+    width: 100%;
+    opacity: 0; /* Start with opacity set to 0 */
+    transition: opacity 1s ease-in-out; /* Added transition property */
+}
+
+.about-me-container h1 {
+    margin: auto;
+    max-width: max-content;
+    color: #454A52;
+    font-size: 60px;
+}
+
+.about-me-container p {
+    font-size: 25px;
+    text-align: justify;
+    width: 70%;
+    margin: 3% auto;
+}
+
+.about-me-container button {
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    padding: 5px 7px;
+    border-radius: 5%;
+    font-size: 18px;
+}
+
+.about-me-container button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.about-me-container button a {
+    color: #454A52;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .about-me-container p {
+        font-size: 23px;
+        text-align: justify;
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .about-me-container h1 {
+        font-size: 50px;
+    }
+}

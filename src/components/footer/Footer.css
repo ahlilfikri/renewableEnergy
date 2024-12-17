@@ -1,0 +1,20 @@
+.footer-container h1 {
+    width: fit-content;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 30px 0;
+    color: #adb4bf;
+}
+.footer-container {
+    background-color: #454a52;
+}
+
+@media (max-width: 960px) {
+    .footer-container h1 {
+        position: absolute;
+        background-color: #454a52;
+        width: 100vw;
+        text-align: center;
+    }
+}
