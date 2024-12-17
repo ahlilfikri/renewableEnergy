@@ -32,7 +32,7 @@ const Experience = () =>{
 
     return (
         <Fragment>
-            <div className="experience-container">
+            <div className="experience-container" id='information'>
                 <h1>Informasi</h1>
                 <p>Berikut adalah beberapa artikel mengenai energi terbarukan</p>
                 <div className="card-experience">

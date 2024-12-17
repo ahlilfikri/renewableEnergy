@@ -28,8 +28,6 @@ const NavBar = () => {
       setIsOpen(false);
     }
   }, [screenWidth]);
-  console.log(isOpen);
-  
 
   return (
     <nav className="navbar">
@@ -56,11 +54,6 @@ const NavBar = () => {
               <li>
                 <Link className="nav-link" to="/count">
                   Hitung Energi
-                </Link>
-              </li>
-              <li>
-                <Link className="nav-link" to="/#contact">
-                  Kontak
                 </Link>
               </li>
             </ul>
