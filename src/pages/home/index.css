@@ -73,7 +73,7 @@
 /* Responsif */
 @media (max-width: 600px) {
     .close-btn {
-        margin-left: 330px;
+        margin-left: 280px;
     }
     .notification-content {
         width: 90%;
