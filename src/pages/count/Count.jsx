@@ -4,21 +4,20 @@ import "./Count.css";
 
 const Count = () => {
     const [deviceType, setDeviceType] = useState("");
-    const [vehicleType, setVehicleType] = useState(""); // Sub-pilihan untuk kendaraan
+    const [vehicleType, setVehicleType] = useState(""); 
     const [usageTime, setUsageTime] = useState("");
     const [distance, setDistance] = useState("");
     const [result, setResult] = useState(null);
     const [comparison, setComparison] = useState(null);
 
-    // Data konsumsi energi per km (bahan bakar dan listrik)
     const energyData = {
-        fan: 0.05, // Kipas Angin: 0.05 kWh per jam
-        monitor: 0.1, // Monitor: 0.1 kWh per jam
-        ac: 1.2, // AC: 1.2 kWh per jam
-        motor: 0.025, // Motor: 0.025 Liter per km
-        car: 0.083, // Mobil: 0.083 Liter per km
-        motorElectric: 0.01, // Motor Listrik: 0.01 kWh per km
-        carElectric: 0.2, // Mobil Listrik: 0.2 kWh per km
+        fan: 0.05, 
+        monitor: 0.1,
+        ac: 1.2, 
+        motor: 0.025,
+        car: 0.083, 
+        motorElectric: 0.01,
+        carElectric: 0.2,
     };
 
     const calculateEnergy = () => {
@@ -31,11 +30,9 @@ const Count = () => {
         let energyUsed;
 
         if (deviceType === "vehicle") {
-            // Kendaraan: gunakan jarak untuk perhitungan
             consumptionRate = energyData[vehicleType];
             energyUsed = parseFloat(distance) * consumptionRate;
         } else {
-            // Perangkat: gunakan waktu untuk perhitungan
             consumptionRate = energyData[deviceType];
             energyUsed = parseFloat(usageTime) * consumptionRate;
         }
@@ -46,7 +43,6 @@ const Count = () => {
         });
 
         if (deviceType === "vehicle") {
-            // Perbandingan dengan energi terbarukan
             const electricConsumptionRate =
                 vehicleType === "motor" ? energyData.motorElectric : energyData.carElectric;
             const electricEnergyUsed = parseFloat(distance) * electricConsumptionRate;
@@ -57,7 +53,7 @@ const Count = () => {
                 unit: deviceType === "vehicle" ? "Liter vs kWh" : "kWh",
             });
         } else {
-            setComparison(null); // Tidak ada perbandingan untuk perangkat
+            setComparison(null); 
         }
     };
 

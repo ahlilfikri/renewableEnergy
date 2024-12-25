@@ -1,6 +1,5 @@
-/* Styling untuk container utama */
 .monitoring-container {
-    margin: 20px auto;
+    margin: 20px auto auto auto;
     padding: 20px;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -9,7 +8,6 @@
     box-sizing: border-box;
 }
 
-/* Styling untuk judul halaman */
 .monitoring-container h1 {
     font-size: 24px;
     text-align: center;
@@ -17,7 +15,6 @@
     margin-bottom: 20px;
 }
 
-/* Styling untuk form */
 .form-container {
     display: flex;
     flex-direction: column;
@@ -25,7 +22,6 @@
     margin-top: 20px;
 }
 
-/* Styling untuk label dan input */
 label {
     font-size: 16px;
     color: #555;
@@ -43,13 +39,11 @@ input, select {
     width: 100%;
 }
 
-/* Fokus pada input */
 input:focus, select:focus {
     border-color: #007BFF;
     outline: none;
 }
 
-/* Styling untuk tombol */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -63,13 +57,11 @@ button {
     width: 100%;
 }
 
-/* Hover efek pada tombol */
 button:hover {
     background-color: #0056b3;
 }
 
-/* Styling untuk hasil */
-.result-container {
+.result-container, .comparison-container {
     margin-top: 30px;
     padding: 20px;
     background-color: #fff;
@@ -78,21 +70,56 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.result-container h2 {
+.result-container h2, .comparison-container h2 {
     margin-bottom: 10px;
     font-size: 20px;
     color: #333;
 }
 
-.result-container p {
+.result-container p, .comparison-container p {
     font-size: 16px;
     color: #555;
 }
 
-/* Responsivitas */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .monitoring-container {
         padding: 15px;
+    }
+
+    .monitoring-container h1 {
+        font-size: 22px;
+    }
+
+    .form-container {
+        gap: 12px;
+        width: 90%;
+    }
+
+    input, select, button {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    button {
+        width: auto;
+    }
+
+    .result-container, .comparison-container {
+        padding: 15px;
+    }
+
+    .result-container h2, .comparison-container h2 {
+        font-size: 18px;
+    }
+
+    .result-container p, .comparison-container p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .monitoring-container {
+        margin: 15px;
     }
 
     .monitoring-container h1 {
@@ -104,26 +131,23 @@ button:hover {
         padding: 8px;
     }
 
-    button {
-        width: auto;
+    .result-container, .comparison-container {
+        padding: 12px;
     }
 
-    .result-container {
-        padding: 15px;
+    .result-container h2, .comparison-container h2 {
+        font-size: 16px;
     }
 
-    .result-container h2 {
-        font-size: 18px;
-    }
-
-    .result-container p {
-        font-size: 14px;
+    .result-container p, .comparison-container p {
+        font-size: 13px;
     }
 }
 
 @media (max-width: 480px) {
     .monitoring-container {
-        margin: 10px;
+        width: 100% !important;
+        margin: 0 !important;
         padding: 10px;
     }
 
@@ -136,15 +160,15 @@ button:hover {
         padding: 6px;
     }
 
-    .result-container {
+    .result-container, .comparison-container {
         padding: 10px;
     }
 
-    .result-container h2 {
-        font-size: 16px;
+    .result-container h2, .comparison-container h2 {
+        font-size: 14px;
     }
 
-    .result-container p {
+    .result-container p, .comparison-container p {
         font-size: 12px;
     }
 }
