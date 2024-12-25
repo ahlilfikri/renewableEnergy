@@ -10,7 +10,7 @@
 
 .text-content {
     margin: auto;
-    padding: 0 200px;
+    padding: 0 200px !important;
 }
 
 .first-h1,
@@ -26,11 +26,17 @@
 @media (max-width: 768px) {
     .text-content h1 {
         text-align: left;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-
+    
     .text-content p {
         text-align: justify;
         padding: 10px;
+        font-size: 1rem;
+    }
+
+    .text-content {
+        margin: auto;
+        padding: 0 0 !important;
     }
 }

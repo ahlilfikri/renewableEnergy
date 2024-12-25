@@ -52,6 +52,9 @@
 
 @media (max-width: 540px) {
     .about-me-container h1 {
-        font-size: 50px;
+        font-size: 2rem;
+    }
+    .about-me-container p {
+        font-size: 1rem;
     }
 }
