@@ -121,7 +121,7 @@ const Count = () => {
                 <div className="result-container">
                     <h2>Hasil Perhitungan</h2>
                     <p>
-                        Penggunaan {deviceType === "vehicle" ? "bahan bakar" : "energi"} adalah{" "}
+                        Rata-rata Penggunaan {deviceType === "vehicle" ? "bahan bakar" : "energi"} adalah{" "}
                         <strong>
                             {result.energyUsed.toFixed(2)} {result.unit}
                         </strong>
