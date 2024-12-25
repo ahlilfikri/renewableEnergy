@@ -17,12 +17,10 @@ const Home = () => {
     return (
         <Fragment>
             <div className="home-wrapper">
-                {/* Modal Notification */}
                 {showModal && (
                     <div className="notification-modal">
                         <div className="notification-content">
                             <span className="close-btn" onClick={closeModal}>&times;</span>
-                            {/* <span className="close-btn" onClick={closeModal}>tutu</span> */}
                             <h4>Ada Update Informasi Terbaru!</h4>
                             <p>Ayo Baca Artikel Terbaru Mengenai Energi Terbarukan </p>
                             <p><a href="https://www.rri.co.id/iptek/676935/energi-terbarukan-mampu-mengurangi-dampak-kerusakan-di-bumi"><button>Baca Disini!</button></a></p>

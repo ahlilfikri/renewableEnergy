@@ -1,0 +1,150 @@
+/* Styling untuk container utama */
+.monitoring-container {
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Styling untuk judul halaman */
+.monitoring-container h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Styling untuk label dan input */
+label {
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+/* Fokus pada input */
+input:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Styling untuk tombol */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Hover efek pada tombol */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling untuk hasil */
+.result-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.result-container p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .monitoring-container {
+        padding: 15px;
+    }
+
+    .monitoring-container h1 {
+        font-size: 20px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        width: auto;
+    }
+
+    .result-container {
+        padding: 15px;
+    }
+
+    .result-container h2 {
+        font-size: 18px;
+    }
+
+    .result-container p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .monitoring-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .monitoring-container h1 {
+        font-size: 18px;
+    }
+
+    input, select, button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .result-container {
+        padding: 10px;
+    }
+
+    .result-container h2 {
+        font-size: 16px;
+    }
+
+    .result-container p {
+        font-size: 12px;
+    }
+}

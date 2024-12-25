@@ -56,10 +56,14 @@
 @media (max-width: 400px) {
     .card {
         width: 200px;
+        height: 300px;
     }
     .card img {
         position: relative;
         left: 50%;
+    }
+    .card a {
+        font-size: 10px;
     }
     .title-card {
         width: 175px;
